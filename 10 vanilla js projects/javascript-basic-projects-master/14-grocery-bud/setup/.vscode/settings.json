@@ -1,3 +1,4 @@
 {
-    "editor.fontFamily": "'cascadia code',Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "'cascadia code',Consolas, 'Courier New', monospace",
+    "liveServer.settings.port": 5501
 }

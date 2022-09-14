@@ -25,7 +25,7 @@ let data =
 
 ]
 
-const info = document.querySelector('#info');
+const info = document.getElementById('info');
 let details = data.map( (item) => {// here item is object
     return ` <div> ${item.name} is ${item.age} years old. </div>`;
     

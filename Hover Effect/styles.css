@@ -23,7 +23,7 @@ body{
     color: #fff;
     cursor: pointer;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
-   
+    
 }
 .hover{
     transform: scale(2);
