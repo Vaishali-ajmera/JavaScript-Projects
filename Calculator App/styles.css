@@ -13,23 +13,34 @@
 .container{
     max-width: 350px;
     margin: 7vh auto 0 auto;
-    box-shadow: 0px 0px 43px 5px rgba(153,153,153,1);
+    box-shadow: 0px 0px 30px 10px rgba(153,153,153,1);
     background-color: #0a2351;
     color: white;
+   
+   
 }
 
 #display{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     height: 95px;
     width: 100%;
     font-size: 32px;
     text-align: right;
+    position: relative;
+    padding: 20px;
+    padding-right: 10px;
 }
 .previous-output{
     opacity: .4;
-    font-size: 25px;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+.temporary-result{
+    opacity: .4;
+    font-size: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+
 }
 
 
@@ -37,9 +48,8 @@
 .buttons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
-    grid-row: 1/ -1;
+    /* grid-row: 1/ -1; */
+
 }
 
 
@@ -50,42 +60,41 @@
     font-size: 30px;
     cursor: pointer;
     transition: all 0.3s linear;
-
+    
 }
 .zero{
-    grid-column: 1/ span 2;
+    grid-column:  span 2;
     align-self: center;
 
 }
 .equal{
     grid-row:  span 2;
-    color: rgba(255, 255, 255, 0.863);   
+    /* color: rgba(255, 255, 255, 0.863);    */
     background-color: #e77c18;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+
 }
 .equal:hover{
-    background-color:#c96e1a; ;
+    background-color:#c96e1a;
 }
 .operator{
     background-color: #128094;
     color: #ffffff;
 
 }
-.operator:hover {
+.operator:hover , .operator.pressed{
     background-color: rgb(52, 155, 196) !important
 }
 .number{
     color:#6699CC;
 
 }
-.number:hover {
-    background-color: #061b42
-}
-.number:active {
-    background-color: #061b42
+.number:hover ,.number.pressed, .equal.pressed{
+    background-color: #DBEDF3;
+    opacity: 0.3;
 }
 
 
